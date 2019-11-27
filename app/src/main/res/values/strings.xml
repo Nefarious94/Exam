@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Exam</string>
+    <string name="suma">Suma</string>
+    <string name="number1">Number1</string>
+    <string name="number2">number2</string>
+    <string name="resta">Resta</string>
+    <string name="mult">Mult</string>
+    <string name="div">Div</string>
+    <string name="result">Result</string>
+    <string name="tipo">Tipo</string>
+    <string name="par">Par</string>
+    <string name="inpar">Inpar</string>
+    <string name="m1">M1</string>
+    <string name="m2">M2</string>
+    <string name="m3">M3</string>
+    <string name="m4">M4</string>
+</resources>

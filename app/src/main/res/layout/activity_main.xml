@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Number1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:text="@string/number1" />
+
+    <EditText
+        android:id="@+id/Number2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/Number1"
+        android:text="@string/number2" />
+
+    <ImageButton
+        android:id="@+id/Suma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Number2"
+        android:src="@mipmap/suma"
+        android:text="@string/suma" />
+
+    <ImageButton
+        android:id="@+id/Resta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Number2"
+        android:layout_toRightOf="@id/Suma"
+        android:src="@mipmap/resta"
+        android:text="@string/resta" />
+
+    <ImageButton
+        android:id="@+id/Mult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Suma"
+        android:src="@mipmap/mult"
+        android:text="@string/mult" />
+
+    <ImageButton
+        android:id="@+id/Div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Suma"
+        android:layout_toRightOf="@id/Mult"
+        android:src="@mipmap/div"
+        android:text="@string/div" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Div"
+        android:text="@string/result"
+        android:inputType="numberDecimal"/>
+
+    <RadioGroup
+        android:id="@+id/Tipo"
+        android:text="@string/tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Number2"
+        android:layout_alignRight="@+id/Number2">
+
+        <RadioButton
+            android:id="@+id/Par"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/par" />
+
+        <RadioButton
+            android:id="@+id/Inpar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/inpar" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/M1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Result"
+        android:text="@string/m1" />
+
+    <Button
+        android:id="@+id/M2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m2"
+        android:layout_below="@id/Result"
+        android:layout_toRightOf="@id/M1"/>
+
+    <Button
+        android:id="@+id/M3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m3"
+        android:layout_below="@id/Result"
+        android:layout_toRightOf="@id/M2"/>
+
+    <Button
+        android:id="@+id/M4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m4"
+        android:layout_below="@id/Result"
+        android:layout_toRightOf="@id/M3"/>
+</RelativeLayout>
